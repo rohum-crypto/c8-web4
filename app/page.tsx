@@ -18,6 +18,9 @@ import {
   Users,
   BarChart,
   Layers,
+  Bot,
+  Blocks,
+  Share2,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -67,34 +70,34 @@ export default function LandingPage() {
 
   const features = [
     {
-      title: "Smart Automation",
-      description: "Automate repetitive tasks and workflows to save time and reduce errors.",
-      icon: <Zap className="size-5" />,
+      title: "AI-Powered Agents",
+      description: "Deploy intelligent autonomous agents that learn, adapt, and execute complex tasks across your digital ecosystem.",
+      icon: <Bot className="size-5" />,
     },
     {
-      title: "Advanced Analytics",
-      description: "Gain valuable insights with real-time data visualization and reporting.",
-      icon: <BarChart className="size-5" />,
-    },
-    {
-      title: "Team Collaboration",
-      description: "Work together seamlessly with integrated communication tools.",
+      title: "3D Avatar Technology",
+      description: "Create photorealistic 3D avatars with advanced AI that represent your brand in virtual environments.",
       icon: <Users className="size-5" />,
     },
     {
-      title: "Enterprise Security",
-      description: "Keep your data safe with end-to-end encryption and compliance features.",
+      title: "Blockchain Integration",
+      description: "Leverage Web3 infrastructure with smart contracts, NFTs, and decentralized identity management.",
+      icon: <Blocks className="size-5" />,
+    },
+    {
+      title: "Social Media Automation",
+      description: "AI agents manage your entire social media presence with intelligent content creation and engagement.",
+      icon: <Share2 className="size-5" />,
+    },
+    {
+      title: "Decentralized Analytics",
+      description: "Get real-time insights from blockchain data and AI agent performance across all platforms.",
+      icon: <BarChart className="size-5" />,
+    },
+    {
+      title: "Web4 Security",
+      description: "Enterprise-grade security with zero-knowledge proofs and decentralized authentication systems.",
       icon: <Shield className="size-5" />,
-    },
-    {
-      title: "Seamless Integration",
-      description: "Connect with your favorite tools through our extensive API ecosystem.",
-      icon: <Layers className="size-5" />,
-    },
-    {
-      title: "24/7 Support",
-      description: "Get help whenever you need it with our dedicated support team.",
-      icon: <Star className="size-5" />,
     },
   ]
 
@@ -106,7 +109,7 @@ export default function LandingPage() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-bold">
             <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
-              S
+              C8
             </div>
             <span>cre8tar</span>
           </div>
@@ -209,36 +212,35 @@ export default function LandingPage() {
               className="text-center max-w-3xl mx-auto mb-12"
             >
               <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
-                Launching Soon
+                Web4 Revolution
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-                First Web4 based startup
+                AI Agents Meet 3D Avatars on Blockchain
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                The all-in-one platform that helps teams collaborate, automate, and deliver exceptional results.
-                Streamline your processes and focus on what matters most.
+                The first Web4 platform combining AI-powered autonomous agents, photorealistic 3D avatars, and blockchain technology to revolutionize digital interactions and social media automation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="rounded-full h-12 px-8 text-base">
-                  Start Free Trial
+                  Deploy Your AI Agent
                   <ArrowRight className="ml-2 size-4" />
                 </Button>
                 <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base">
-                  Book a Demo
+                  Watch Demo
                 </Button>
               </div>
               <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>No credit card</span>
+                  <span>Blockchain native</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>14-day trial</span>
+                  <span>AI-powered</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>Cancel anytime</span>
+                  <span>3D avatar ready</span>
                 </div>
               </div>
             </motion.div>
@@ -249,17 +251,6 @@ export default function LandingPage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="relative mx-auto max-w-5xl"
             >
-              {/* <div className="rounded-xl overflow-hidden shadow-2xl border border-border/40 bg-gradient-to-b from-background to-muted/20">
-                <Image
-                  src=""
-                  width={1280}
-                  height={720}
-                  alt="c8 globe"
-                  className="w-full h-auto"
-                  priority
-                />
-                <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-black/10 dark:ring-white/10"></div>
-              </div> */}
               <div className="absolute -bottom-6 -right-6 -z-10 h-[300px] w-[300px] rounded-full bg-gradient-to-br from-primary/30 to-secondary/30 blur-3xl opacity-70"></div>
               <div className="absolute -top-6 -left-6 -z-10 h-[300px] w-[300px] rounded-full bg-gradient-to-br from-secondary/30 to-primary/30 blur-3xl opacity-70"></div>
             </motion.div>
@@ -270,13 +261,13 @@ export default function LandingPage() {
         <section className="w-full py-12 border-y bg-muted/30">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <p className="text-sm font-medium text-muted-foreground">Trusted by innovative companies worldwide</p>
+              <p className="text-sm font-medium text-muted-foreground">Powering the next generation of Web4 applications</p>
               <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
                 {[1, 2, 3, 4, 5].map((i) => (
                   <Image
                     key={i}
                     src={`/placeholder-logo.svg`}
-                    alt={`Company logo ${i}`}
+                    alt={`Web4 partner ${i}`}
                     width={120}
                     height={60}
                     className="h-8 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
@@ -298,12 +289,11 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
             >
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
-                Features
+                Web4 Features
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Everything You Need to Succeed</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Next-Generation Digital Infrastructure</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Our comprehensive platform provides all the tools you need to streamline your workflow, boost
-                productivity, and achieve your goals.
+                Harness the power of AI agents, 3D avatars, and blockchain technology to create immersive digital experiences that drive engagement and automate your online presence.
               </p>
             </motion.div>
 
@@ -346,9 +336,9 @@ export default function LandingPage() {
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                 How It Works
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Simple Process, Powerful Results</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Deploy Your Web4 Ecosystem</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Get started in minutes and see the difference our platform can make for your business.
+                Launch AI agents, create 3D avatars, and automate your digital presence in minutes with our Web4 platform.
               </p>
             </motion.div>
 
@@ -358,18 +348,18 @@ export default function LandingPage() {
               {[
                 {
                   step: "01",
-                  title: "Create Account",
-                  description: "Sign up in seconds with just your email. No credit card required to get started.",
+                  title: "Deploy AI Agents",
+                  description: "Create autonomous AI agents with custom personalities and capabilities tailored to your brand and objectives.",
                 },
                 {
                   step: "02",
-                  title: "Configure Workspace",
-                  description: "Customize your workspace to match your team's unique workflow and requirements.",
+                  title: "Design 3D Avatars",
+                  description: "Generate photorealistic 3D avatars that represent your agents in virtual environments and social platforms.",
                 },
                 {
                   step: "03",
-                  title: "Boost Productivity",
-                  description: "Start using our powerful features to streamline processes and achieve your goals.",
+                  title: "Automate & Scale",
+                  description: "Let your AI agents manage social media, engage audiences, and execute blockchain transactions automatically.",
                 },
               ].map((step, i) => (
                 <motion.div
@@ -404,9 +394,9 @@ export default function LandingPage() {
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                 Testimonials
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Loved by Teams Worldwide</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Web4 Leaders Trust cre8tar</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Don't just take our word for it. See what our customers have to say about their experience.
+                See how forward-thinking companies are leveraging AI agents and 3D avatars to transform their digital presence.
               </p>
             </motion.div>
 
@@ -414,44 +404,44 @@ export default function LandingPage() {
               {[
                 {
                   quote:
-                    "cre8tar has transformed how we manage our projects. The automation features have saved us countless hours of manual work.",
-                  author: "Sarah Johnson",
-                  role: "Project Manager, TechCorp",
+                    "Our AI agents have revolutionized our social media strategy. They manage everything from content creation to community engagement, increasing our reach by 300%.",
+                  author: "Sarah Chen",
+                  role: "CMO, MetaVerse Corp",
                   rating: 5,
                 },
                 {
                   quote:
-                    "The analytics dashboard provides insights we never had access to before. It's helped us make data-driven decisions that have improved our ROI.",
-                  author: "Michael Chen",
-                  role: "Marketing Director, GrowthLabs",
+                    "The 3D avatar technology is incredible. Our virtual brand ambassadors engage customers 24/7 across multiple platforms, creating authentic connections.",
+                  author: "Marcus Rodriguez",
+                  role: "Digital Strategy Director, Future Brands",
                   rating: 5,
                 },
                 {
                   quote:
-                    "Customer support is exceptional. Any time we've had an issue, the team has been quick to respond and resolve it. Couldn't ask for better service.",
-                  author: "Emily Rodriguez",
-                  role: "Operations Lead, StartupX",
+                    "Integrating blockchain with AI agents opened new revenue streams we never imagined. The automated NFT campaigns generated 7-figure returns.",
+                  author: "Dr. Aisha Patel",
+                  role: "Founder, CryptoInnovate",
                   rating: 5,
                 },
                 {
                   quote:
-                    "We've tried several similar solutions, but none compare to the ease of use and comprehensive features of cre8tar. It's been a game-changer.",
-                  author: "David Kim",
-                  role: "CEO, InnovateNow",
+                    "The Web4 infrastructure allowed us to create immersive customer experiences that blend AI, avatars, and blockchain seamlessly. Game-changing technology.",
+                  author: "James Thompson",
+                  role: "CTO, NextGen Solutions",
                   rating: 5,
                 },
                 {
                   quote:
-                    "The collaboration tools have made remote work so much easier for our team. We're more productive than ever despite being spread across different time zones.",
-                  author: "Lisa Patel",
-                  role: "HR Director, RemoteFirst",
+                    "Our AI agents handle customer service across 50+ languages while our 3D avatars provide personalized shopping experiences. Conversion rates up 180%.",
+                  author: "Lisa Wang",
+                  role: "VP of Innovation, Global Retail Tech",
                   rating: 5,
                 },
                 {
                   quote:
-                    "Implementation was seamless, and the ROI was almost immediate. We've reduced our operational costs by 30% since switching to cre8tar.",
-                  author: "James Wilson",
-                  role: "COO, ScaleUp Inc",
+                    "The automation capabilities are mind-blowing. AI agents manage our entire Web3 ecosystem while maintaining authentic brand voice across all touchpoints.",
+                  author: "Alex Kumar",
+                  role: "Blockchain Lead, DecentraFlow",
                   rating: 5,
                 },
               ].map((testimonial, i) => (
@@ -504,9 +494,9 @@ export default function LandingPage() {
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                 Pricing
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Simple, Transparent Pricing</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Web4 Plans for Every Scale</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Choose the plan that's right for your business. All plans include a 14-day free trial.
+                From individual creators to enterprise organizations, unlock the power of AI agents and 3D avatars with flexible pricing.
               </p>
             </motion.div>
 
@@ -526,37 +516,38 @@ export default function LandingPage() {
                   <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
                     {[
                       {
-                        name: "Starter",
-                        price: "$29",
-                        description: "Perfect for small teams and startups.",
-                        features: ["Up to 5 team members", "Basic analytics", "5GB storage", "Email support"],
-                        cta: "Start Free Trial",
+                        name: "Creator",
+                        price: "$49",
+                        description: "Perfect for individual creators and small projects.",
+                        features: ["5 AI agents", "Basic 3D avatars", "Social media automation", "Blockchain wallet integration", "Community support"],
+                        cta: "Start Creating",
                       },
                       {
-                        name: "Professional",
-                        price: "$79",
-                        description: "Ideal for growing businesses.",
+                        name: "Business",
+                        price: "$149",
+                        description: "Ideal for growing businesses and brands.",
                         features: [
-                          "Up to 20 team members",
-                          "Advanced analytics",
-                          "25GB storage",
-                          "Priority email support",
-                          "API access",
+                          "25 AI agents",
+                          "Advanced 3D avatars",
+                          "Multi-platform automation",
+                          "Smart contract deployment",
+                          "Analytics dashboard",
+                          "Priority support",
                         ],
-                        cta: "Start Free Trial",
+                        cta: "Scale Your Brand",
                         popular: true,
                       },
                       {
                         name: "Enterprise",
-                        price: "$199",
+                        price: "$399",
                         description: "For large organizations with complex needs.",
                         features: [
-                          "Unlimited team members",
-                          "Custom analytics",
-                          "Unlimited storage",
-                          "24/7 phone & email support",
-                          "Advanced API access",
+                          "Unlimited AI agents",
+                          "Custom 3D avatars",
+                          "White-label solutions",
+                          "Advanced blockchain features",
                           "Custom integrations",
+                          "Dedicated support team",
                         ],
                         cta: "Contact Sales",
                       },
@@ -607,37 +598,38 @@ export default function LandingPage() {
                   <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
                     {[
                       {
-                        name: "Starter",
-                        price: "$23",
-                        description: "Perfect for small teams and startups.",
-                        features: ["Up to 5 team members", "Basic analytics", "5GB storage", "Email support"],
-                        cta: "Start Free Trial",
+                        name: "Creator",
+                        price: "$39",
+                        description: "Perfect for individual creators and small projects.",
+                        features: ["5 AI agents", "Basic 3D avatars", "Social media automation", "Blockchain wallet integration", "Community support"],
+                        cta: "Start Creating",
                       },
                       {
-                        name: "Professional",
-                        price: "$63",
-                        description: "Ideal for growing businesses.",
+                        name: "Business",
+                        price: "$119",
+                        description: "Ideal for growing businesses and brands.",
                         features: [
-                          "Up to 20 team members",
-                          "Advanced analytics",
-                          "25GB storage",
-                          "Priority email support",
-                          "API access",
+                          "25 AI agents",
+                          "Advanced 3D avatars",
+                          "Multi-platform automation",
+                          "Smart contract deployment",
+                          "Analytics dashboard",
+                          "Priority support",
                         ],
-                        cta: "Start Free Trial",
+                        cta: "Scale Your Brand",
                         popular: true,
                       },
                       {
                         name: "Enterprise",
-                        price: "$159",
+                        price: "$319",
                         description: "For large organizations with complex needs.",
                         features: [
-                          "Unlimited team members",
-                          "Custom analytics",
-                          "Unlimited storage",
-                          "24/7 phone & email support",
-                          "Advanced API access",
+                          "Unlimited AI agents",
+                          "Custom 3D avatars",
+                          "White-label solutions",
+                          "Advanced blockchain features",
                           "Custom integrations",
+                          "Dedicated support team",
                         ],
                         cta: "Contact Sales",
                       },
@@ -702,9 +694,9 @@ export default function LandingPage() {
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                 FAQ
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Frequently Asked Questions</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Web4 Questions Answered</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Find answers to common questions about our platform.
+                Get answers about AI agents, 3D avatars, and blockchain integration.
               </p>
             </motion.div>
 
@@ -712,34 +704,34 @@ export default function LandingPage() {
               <Accordion type="single" collapsible className="w-full">
                 {[
                   {
-                    question: "How does the 14-day free trial work?",
+                    question: "What makes this a Web4 platform?",
                     answer:
-                      "Our 14-day free trial gives you full access to all features of your selected plan. No credit card is required to sign up, and you can cancel at any time during the trial period with no obligation.",
+                      "Web4 combines the decentralization of Web3 with AI-powered autonomous agents and immersive 3D experiences. Our platform integrates blockchain technology, AI agents, and 3D avatars to create the next evolution of the internet.",
                   },
                   {
-                    question: "Can I change plans later?",
+                    question: "How do AI agents work with social media automation?",
                     answer:
-                      "Yes, you can upgrade or downgrade your plan at any time. If you upgrade, the new pricing will be prorated for the remainder of your billing cycle. If you downgrade, the new pricing will take effect at the start of your next billing cycle.",
+                      "Our AI agents can create content, engage with audiences, respond to comments, schedule posts, and analyze performance across multiple social platforms. They learn your brand voice and maintain consistent engagement 24/7.",
                   },
                   {
-                    question: "Is there a limit to how many users I can add?",
+                    question: "Can I customize my 3D avatars?",
                     answer:
-                      "The number of users depends on your plan. The Starter plan allows up to 5 team members, the Professional plan allows up to 20, and the Enterprise plan has no limit on team members.",
+                      "Yes! Our advanced 3D avatar system allows full customization including appearance, clothing, animations, and even personality traits. Avatars can be deployed across virtual worlds, social platforms, and your own applications.",
                   },
                   {
-                    question: "Do you offer discounts for nonprofits or educational institutions?",
+                    question: "What blockchain features are included?",
                     answer:
-                      "Yes, we offer special pricing for nonprofits, educational institutions, and open-source projects. Please contact our sales team for more information.",
+                      "We support smart contract deployment, NFT creation and management, DeFi integrations, token payments, decentralized identity, and cross-chain compatibility with major blockchain networks.",
                   },
                   {
-                    question: "How secure is my data?",
+                    question: "How secure is the platform?",
                     answer:
-                      "We take security very seriously. All data is encrypted both in transit and at rest. We use industry-standard security practices and regularly undergo security audits. Our platform is compliant with GDPR, CCPA, and other relevant regulations.",
+                      "We use enterprise-grade security with zero-knowledge proofs, end-to-end encryption, decentralized authentication, and regular smart contract audits. Your data and assets are protected by military-grade security protocols.",
                   },
                   {
-                    question: "What kind of support do you offer?",
+                    question: "Do I need technical knowledge to use the platform?",
                     answer:
-                      "Support varies by plan. All plans include email support, with the Professional plan offering priority email support. The Enterprise plan includes 24/7 phone and email support. We also have an extensive knowledge base and community forum available to all users.",
+                      "Not at all! Our platform is designed for users of all technical levels. The AI agents handle complex blockchain and automation tasks while providing an intuitive interface for configuration and monitoring.",
                   },
                 ].map((faq, i) => (
                   <motion.div
@@ -777,15 +769,14 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-6 text-center"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                Ready to Transform Your Workflow?
+                Ready to Enter the Web4 Era?
               </h2>
               <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
-                Join thousands of satisfied customers who have streamlined their processes and boosted productivity with
-                our platform.
+                Join the revolution where AI agents, 3D avatars, and blockchain technology converge to create the future of digital interaction and automated social presence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
                 <Button size="lg" variant="secondary" className="rounded-full h-12 px-8 text-base">
-                  Start Free Trial
+                  Deploy Your First Agent
                   <ArrowRight className="ml-2 size-4" />
                 </Button>
                 <Button
@@ -793,11 +784,11 @@ export default function LandingPage() {
                   variant="outline"
                   className="rounded-full h-12 px-8 text-base bg-transparent border-white text-white hover:bg-white/10"
                 >
-                  Schedule a Demo
+                  Explore Web4 Demo
                 </Button>
               </div>
               <p className="text-sm text-primary-foreground/80 mt-4">
-                No credit card required. 14-day free trial. Cancel anytime.
+                Start with free AI agents. Upgrade for 3D avatars and blockchain features.
               </p>
             </motion.div>
           </div>
@@ -814,7 +805,7 @@ export default function LandingPage() {
                 <span>cre8tar</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Streamline your workflow with our all-in-one SaaS platform. Boost productivity and scale your business.
+                The first Web4 platform combining AI agents, 3D avatars, and blockchain technology for the future of digital interaction.
               </p>
               <div className="flex gap-4">
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -873,26 +864,26 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="space-y-4">
-              <h4 className="text-sm font-bold">Product</h4>
+              <h4 className="text-sm font-bold">Web4 Platform</h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Features
+                    AI Agents
                   </Link>
                 </li>
                 <li>
-                  <Link href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Integrations
+                  <Link href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+                    3D Avatars
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    API
+                    Blockchain Integration
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                    Social Automation
                   </Link>
                 </li>
               </ul>
@@ -902,22 +893,22 @@ export default function LandingPage() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Documentation
+                    Web4 Documentation
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Guides
+                    AI Agent Guides
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Blog
+                    Avatar Creator
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Support
+                    Developer API
                   </Link>
                 </li>
               </ul>
